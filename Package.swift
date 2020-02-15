@@ -1,3 +1,5 @@
+// swift-tools-version:5.1
+
 import PackageDescription
 
 let package = Package(
@@ -9,8 +11,7 @@ let package = Package(
         .library(name: "SwiftCharts", targets: ["SwiftCharts"]),
     ],
     targets: [
-        .target(name: "SwiftCharts", path: "Source"),
-        .testTarget(name: "SwiftChartsTests", dependencies: ["SwiftCharts"]),
+        .target(name: "SwiftCharts", path: "SwiftCharts"),
     ],
     swiftLanguageVersions: [
         .v5
